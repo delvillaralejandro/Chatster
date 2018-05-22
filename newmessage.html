@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/search-problems.css">
+		<title>Chatster</title>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+			    <div class="nav-wrapper">
+			    	<div class="navigation-bar">
+			    		<ul id="nav-mobile" class="left hide-on-med-and-down">
+				      		<li class="logo"></li>
+					        <li><a href="">Home</a></li>
+					        <li><a href="">Chatrooms</a></li>
+					        <li><a href="">Random</a></li>
+					    </ul>
+					    <ul id="nav-mobile" class="right hide-on-med-and-down">
+					        <li><a href="#">Register<i class="fas fa-user-plus fa-sm"></i></a></li>
+					        <li><a href="#">Sign in<i class="fas fa-user fa-sm"></i></a></li>
+					        <li><a href="#">Profile<i class="fas fa-user fa-sm"></i></a></li>
+						</ul>
+			    	</div>		      	
+			    </div>
+			</nav>	
+		</header>
+
+		<main>
+			<div class="ccontainer" style="background-color: white;">
+				<div class="members-count">-</div>
+      			<div class="members-list">-</div>
+      			<div class="messages"></div>
+      			<form class="message-form" onsubmit="return false;">
+        			<input class="message-form__input" placeholder="Type a message.." type="text"/>
+        			<input class="message-form__button" value="Send" type="submit"/>
+      			</form>
+    		</div>		
+
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="row footer-info">
+					<div class="col l6 s12">
+						<h5>Chatster</h5>
+						<p>CHatrooms for people who like to chat.</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5>Contact</h5>
+						<ul>
+							<li><span><i class="fas fa-envelope-square"></i></span> E-mail: correoejemplo@algo.otracosa</li>
+							<li><span><i class="fas fa-phone-square"></i></span> Phone: (664) 664-64-64</li>
+							<li><span><i class="fab fa-facebook-square"></i></span> <a href="http://www.facebook.com"></a></li>
+							<li><span><i class="fab fa-google-plus-square"></i></span> Google +</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="row footer-copyright">
+					<div class="col s12">
+						<p>© 2018 Copyright: Alejandro Del Villar</p>
+					</div>
+				</div>    
+			</div>			
+		</footer>
+		
+		<script src="script.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script type="text/javascript" src="assets/js/search-problems.js"></script>
+
+	</body>
+
+</html>

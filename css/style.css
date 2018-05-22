@@ -1,0 +1,108 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.ccontainer{
+  scroll-behavior: auto;
+  border-style: ;
+  border-color: grey;
+  border-width: 10px;
+}
+.members-count,
+.members-list,
+.messages {
+  border: 1px solid #e4e4e4;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.messages {
+  flex-shrink: 1;
+  overflow: auto;
+}
+.message {
+  padding: 5px 0;
+}
+.message .member {
+ display: inline-block;
+}
+.member {
+  padding-right: 10px;
+  position: relative;
+}
+.message-form {
+  display: flex;
+  flex-shrink: 0;
+}
+.message-form__input {
+  flex-grow: 1;
+  border: 1px solid #dfdfdf;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.message-form__button {
+  margin: 10px;
+}
+
+.first {
+    float: left;
+    width: 20%;
+    height: 30%;
+    background-color: red;
+}
+
+.second{
+    float: left;
+    width: 20%;
+    height: 70%;
+    background-color: green;
+}
+
+
+.third{
+    float: right;
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+}
+
+.fourth {
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: #DDDDDD;
+}
+
+.last{
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: yellow;
+}
+
+/*Footer*/
+footer{
+  color: white;
+    background-color: #003E5E;
+}
+.footer-info p{
+  text-align: justify;
+}
+.footer-info li span{
+  margin-right: 10px;
+}
+.social-media{
+  text-align: center;
+  margin-bottom: 0;
+}
+.social-media a{
+  margin-right: 15px;
+}
+.footer-copyright{
+  margin: 0;
+}
