@@ -2,6 +2,8 @@
 <html>
 	  <head>
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
 	    <link rel="stylesheet" type="text/css" href="css/style2.css">
 	    <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
@@ -15,8 +17,8 @@
 	     	<nav>
 	        	<div class="nav-wrapper">
 	          		<div class="navigation-bar">
-	            		<ul id="nav-mobile" class="left hide-on-med-and-down">
-	              			<li class="logo"><a href="home.html">Home</a></li>
+	            		<ul>
+	            			<li class="logo"><a href="home.html"><i class="large material-icons">dvr</i></a></li>
 	              			<li><a href="rooms.html">Chatroom</a></li>
 	              			<li><a href="profile.html">Profile</a></li>
 	              			<li><a href="message.html">Random</a></li>
@@ -31,12 +33,17 @@
 	    </header>
 
 	    <div class="container message-cont">
-	    	<div class="members-count">-</div>
-	    	<div class="members-list">-</div>
-	    	<div class="messages"></div>
-	    	<form class="message-form" onsubmit="return false;">
+	    	<div class="card blue lighten-3">
+	    		<div class="members-count">-</div>
+	    		<div class="members-list">-</div>
+			</div>
+			<div class="card blue lighten-4">
+				<div class="messages"></div>
+			</div>
+	    	
+	    	<form class="message-form center-align" onsubmit="return false;">
 	        	<input class="message-form__input" placeholder="Type a message.." type="text"/>
-	        	<input class="message-form__button" value="Send" type="submit"/>
+	        	<input class="waves-effect waves-light btn orange center-align message-form__button" value="Send" type="submit"/>
 	    	</form>
 	    </div>
 
