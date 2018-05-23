@@ -1,8 +1,6 @@
-
-
 /*Navigation Bar Styling*/
 .nav-wrapper{
-	background-color: #143cff;
+	background-color: #2196f3;
 }
 .navigation-bar{
 	margin: 0 5%;
@@ -15,17 +13,21 @@
 .right{
 	margin-right: 50px;	
 }
-/*Body Styling*/
-main{
-	flex: 1 0 auto;
+.material-icons{
+	font-size: 10rem;
 }
+/*Body Styling*/
 body{
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 	height: 100%;
-	min-height: 100vh;
 	background: white;
 	font-family: 'Roboto';
-	display: flex;
-	flex-direction: column;
+	
+}
+main{
+	flex: 1 0 auto;
 }
 h1{
 	color:#ff911c;
@@ -42,11 +44,14 @@ label{
 .btn:hover{ 
 	background-color: #14C9D2;
 }
+.message-cont{
+	border
+}
 
 /*Footer*/
 footer{
 	color: white;
-    background-color: #143cff;
+    background-color: #2196f3;
 }
 .footer-info p{
 	text-align: justify;
