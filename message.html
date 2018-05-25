@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html>
-	  <head>
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-	    <link rel="stylesheet" type="text/css" href="css/style2.css">
-	    <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width">
-	    <title>Chatster</title>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Chatster</title>
 	  </head>
+	  
+	<header>
+	  	<nav>
+        	<div class="nav-wrapper">
+          		<div class="navigation-bar">
+            		<ul>
+            			<li class="logo"><a href="home.html"><i class="large material-icons">dvr</i></a></li>
+              			<li><a href="rooms.html">Chatroom</a></li>
+              			<li><a href="profile.html">Profile</a></li>
+              			<li><a href="message.html">Random</a></li>
+            		</ul>
+            		<ul id="nav-mobile" class="right hide-on-med-and-down">
+              			<li><a href="register.html">Register<i class="fas fa-user-plus fa-sm"></i></a></li>
+              			<li><a href="login.html">Login<i class="fas fa-user fa-sm"></i></a></li>
+            		</ul>
+          		</div>            
+         	</div>
+      	</nav>  
+    </header>
 
-	  <main>
-	    <header>
-	     	<nav>
-	        	<div class="nav-wrapper">
-	          		<div class="navigation-bar">
-	            		<ul>
-	            			<li class="logo"><a href="home.html"><i class="large material-icons">dvr</i></a></li>
-	              			<li><a href="rooms.html">Chatroom</a></li>
-	              			<li><a href="profile.html">Profile</a></li>
-	              			<li><a href="message.html">Random</a></li>
-	            		</ul>
-	            		<ul id="nav-mobile" class="right hide-on-med-and-down">
-	              			<li><a href="register.html">Register<i class="fas fa-user-plus fa-sm"></i></a></li>
-	              			<li><a href="login.html">Login<i class="fas fa-user fa-sm"></i></a></li>
-	            		</ul>
-	          		</div>            
-	         	</div>
-	      	</nav>  
-	    </header>
-
-	    <div class="container message-cont">
-	    	<div class="card blue lighten-3">
-	    		<div class="members-count">-</div>
-	    		<div class="members-list">-</div>
-			</div>
-			<div class="card blue lighten-4">
-				<div class="messages"></div>
-			</div>
-	    	
-	    	<form class="message-form center-align" onsubmit="return false;">
-	        	<input class="message-form__input" placeholder="Type a message.." type="text"/>
-	        	<input class="waves-effect waves-light btn orange center-align message-form__button" value="Send" type="submit"/>
-	    	</form>
-	    </div>
-
-	    <footer class="foot">
-	     	<div class="container">
-	        	<div class="row footer-info">
-	          		<div class="col l6 s12">
-	            		<h5>Chatster</h5>
-	            		<p>Chatrooms for people who like to chat.</p>
-	          		</div>
-	         		<div class="col l4 offset-l2 s12">
-	            		<h5>Contact</h5>
-	            		<ul>
-	            			<li><span><i class="fas fa-envelope-square"></i></span> E-mail: correoejemplo@algo.otracosa</li>
-	              			<li><span><i class="fas fa-phone-square"></i></span> Phone: (664)-305-4756</li>
-	            		</ul>
-	          		</div>
-	        	</div>
-	        	<div class="row footer-copyright">
-	        		<div class="col s12 center-align">
-	            		<p>© 2018 Copyright: Alejandro Del Villar</p>
-	        		</div>
-	        	</div>    
-	    	</div>      
-	    </footer>
+    <main>
+		<div class="container message-cont">
+    			<div class="card blue lighten-3 members">
+    				<div class="members-count">-</div>
+    				<div class="members-list">-</div>
+				</div>
+				<div class="divider blue"></div>
+				<div class="card blue lighten-4 msg-view">
+					<div class="messages"></div>
+				</div>
+    			<div class="divider blue"></div>
+    			<div class="submission">
+    				<form class="message-form center-align" onsubmit="return false;">
+                        <div class>
+                            <input class="message-form__input" placeholder="Type a message.." type="text"/>
+                            <input class="btn waves-effect waves-light orange center-align message-form__button" value="Send" type="submit"/>
+                        </div>
+						
+					</form>
+    			</div>
+    	</div>
 	</main>
 
-   <script src="js/script.js"></script>
+    <footer class="foot">
+     	<div class="container">
+        	<div class="row footer-info">
+          		<div class="col l6 s12">
+            		<h5>Chatster</h5>
+            		<p>Chatrooms for people who like to chat.</p>
+          		</div>
+         		<div class="col l4 offset-l2 s12">
+            		<h5>Contact</h5>
+            		<ul>
+            			<li><span><i class="fas fa-envelope-square"></i></span> E-mail: correoejemplo@algo.otracosa</li>
+              			<li><span><i class="fas fa-phone-square"></i></span> Phone: (664)-305-4756</li>
+            		</ul>
+          		</div>
+        	</div>
+        	<div class="row footer-copyright">
+        		<div class="col s12 center-align">
+            		<p>© 2018 Copyright: Alejandro Del Villar</p>
+        		</div>
+        	</div>    
+    	</div>      
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/search-problems.js"></script>
 </html>
